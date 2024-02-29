@@ -9,6 +9,7 @@ public class TestCase_1 extends CommonMethods {
 
     @Test(priority = 1, groups = "smoke")
     public void boughProductTC() throws InterruptedException {
+
         productsSteps.selectProduct();
 
         productDetailsSteps.addProduct();
