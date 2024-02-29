@@ -30,10 +30,10 @@ public class CommonMethods extends PageInitializer  {
         ConfigReader.readProperties(Constants.CONFIG_READER_PATH);
         switch (ConfigReader.getPropertyValue("browser")) {
             case "chrome":
-                ChromeOptions cp=new ChromeOptions();
+                ChromeOptions cq=new ChromeOptions();
                 cp.addExtensions(new File("./Extensions/AdBlock.crx"));
 
-                driver = new ChromeDriver(cp);
+                driver = new ChromeDriver(pc);
                 break;
             case "firefox":
                 driver = new FirefoxDriver();
