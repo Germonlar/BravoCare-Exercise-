@@ -114,10 +114,7 @@ public class CommonMethods extends PageInitializer  {
     public static void clickByLocation (WebElement element){
         Actions action = new Actions(driver);
         Point p = element.getLocation();
-        System.out.println(p.getX());
-        System.out.println(p.getY());
-//        action.moveToLocation(p.getX(),p.getY()).click().perform();
-
+        action.moveToLocation(p.getX(),p.getY()).click().perform();
 
     }
 }
